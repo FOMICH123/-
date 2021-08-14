@@ -1,0 +1,118 @@
+* {
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: #212121;
+  transition: 0.3s;
+
+  padding: 5px;
+}
+a:hover {
+  color: #888;
+}
+li {
+  padding: 15px 0;
+}
+
+main {
+  vertical-align: top;
+  width: 70%;
+  margin: 0 auto;
+}
+.left {
+  padding: 30px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 300px;
+  height: calc(100vh - 100px);
+  position: fixed;
+  float: left;
+  max-width: 25%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #36b604;
+}
+.right {
+  float: right;
+  max-width: 70%;
+  display: block;
+}
+.leftOut {
+  padding: 0 15px;
+}
+.module-caption {
+  margin: 15px 0;
+  font-size: 20px;
+  color: #36b604;
+}
+.menu {
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+ul {
+  list-style-type: square;
+}
+table {
+  width: 100%;
+  text-align: left;
+  border: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  border-collapse: collapse;
+  margin: 30px 0;
+}
+tbody {
+  width: 100%;
+}
+td {
+  border: 2px solid #ccc;
+  padding: 5px 10px;
+  border-bottom: 2px solid #eee;
+}
+.page .price-service-table .price-service-unit {
+  min-width: 60px;
+  white-space: nowrap;
+  width: 80px;
+}
+.page .price-service-table .price-service-cost {
+  min-width: 50px;
+  width: 120px;
+}
+@media (min-width: 768px) {
+  .page .price-service-table td,
+  .page .price-service-table th {
+    padding: 5px 10px;
+  }
+}
+.page table th + th,
+.page table td + td {
+  border-left: 2px solid #ccc;
+}
+th {
+  border: 2px solid #ccc;
+  color: #36b604;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+.header {
+  font-size: 18px;
+  padding: 15px 10px;
+}
+.price-service-unit {
+  text-align: center;
+  width: 80px;
+}
+.price-service-cost {
+  text-align: center;
+  width: 120px;
+}
