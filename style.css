@@ -43,7 +43,7 @@ main {
 }
 .left {
   position: fixed;
-  top: 15%;
+  top: 10%;
   overflow-y: scroll;
   float: left;
   max-width: 25%;
