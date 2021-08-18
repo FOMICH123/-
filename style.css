@@ -137,6 +137,9 @@ th {
   color: #36b604;
 }
 @media (max-width: 600px) {
+  header {
+    width: 100%;
+  }
   main {
     margin: 0;
     padding: 0;
