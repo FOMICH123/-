@@ -137,6 +137,15 @@ th {
   color: #36b604;
 }
 @media (max-width: 600px) {
+    .price-service-name {
+    width: 60%;
+  }
+  .price-service-cost {
+    width: 20%;
+  }
+  .price-service-unit {
+    width: 20%;
+  }
     tr {
     width: 100%;
   }
