@@ -5,15 +5,28 @@
   scroll-behavior: smooth;
 }
 body {
-  width: 100%;
-  height: 100%;
+  /* height: 1000000000vh; */
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: white;
+  position: sticky;
+  top: 0;
+}
+.terem {
+  width: 70%;
+  margin: 0 auto;
+}
+.terem a img {
+  width: 10%;
 }
 a {
+  display: inline-block;
   text-decoration: none;
   color: #212121;
   transition: 0.3s;
-
   padding: 5px;
 }
 a:hover {
@@ -29,19 +42,19 @@ main {
   margin: 0 auto;
 }
 .left {
-  padding: 30px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  width: 300px;
-  height: calc(100vh - 100px);
   position: fixed;
+  top: 15%;
+  overflow-y: scroll;
   float: left;
   max-width: 25%;
   border-width: 2px;
+  border-radius: 10px;
   border-style: solid;
   border-color: #36b604;
+  height: calc(100vh - 15%);
 }
 .right {
+  text-align: center;
   float: right;
   max-width: 70%;
   display: block;
@@ -52,7 +65,7 @@ main {
 .module-caption {
   margin: 15px 0;
   font-size: 20px;
-  color: #36b604;
+  /* color: white; */
 }
 .menu {
   margin-bottom: 0;
@@ -61,7 +74,11 @@ main {
   list-style-type: none;
 }
 ul {
-  list-style-type: square;
+  list-style-type: none;
+}
+li a {
+  font-weight: 700;
+  /* color: white; */
 }
 table {
   width: 100%;
@@ -104,10 +121,6 @@ th {
   font-size: 14px;
   padding: 5px 10px;
 }
-.header {
-  font-size: 18px;
-  padding: 15px 10px;
-}
 .price-service-unit {
   text-align: center;
   width: 80px;
@@ -115,4 +128,42 @@ th {
 .price-service-cost {
   text-align: center;
   width: 120px;
+}
+.right img {
+  object-fit: cover;
+  width: 25%;
+}
+.right h2 {
+  color: #36b604;
+}
+@media (max-width: 600px) {
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .right img {
+    width: 50%;
+  }
+  .left {
+    display: none;
+  }
+  .right {
+    max-width: none;
+    width: 100%;
+    float: none;
+  }
+  .terem {
+    display: block;
+    width: 100%;
+  }
+  .terem a {
+    display: block;
+  }
+  .terem a img {
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+  }
 }
